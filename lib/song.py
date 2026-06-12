@@ -4,7 +4,7 @@ class Song:
      genres = []
      artists = []
      genre_count = {}
-     artist_count = {}
+     artists_count = {}
 
    
 
@@ -28,7 +28,7 @@ class Song:
 
      def add_to_artists(self):
         if self.artist not in Song.artists:
-            Song.artist.append(self.artist)
+            Song.artists.append(self.artist)
 
      def add_to_genre_count(self):
         if self.genre in Song.genre_count:
@@ -40,4 +40,4 @@ class Song:
         if self.artist in Song.artists_count:
             Song.artists_count[self.artist] += 1
         else:
-            Song.artists_count[self.artist] = 1       
+            Song.artists_count[self.artist] = 1 
